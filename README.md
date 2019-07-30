@@ -1,9 +1,9 @@
-#Development and production machine images created with *puppet* + *packer* + *amazon aws* + *virtualbox* + *vagrant*
-######Centralized configuration of dev and prod machine images with one JSON configuratin file and provisioning scripts
+# Development and production machine images created with *puppet* + *packer* + *amazon aws* + *virtualbox* + *vagrant*
+###### Centralized configuration of dev and prod machine images with one JSON configuratin file and provisioning scripts
 
 Using this configuration you can derive benefits of michaelszymczak https://github.com/michaelszymczak/independentfrontend machine configuration on your development machine as well as on production.
 
-##Credits
+## Credits
 This work was inspired by:
 + https://github.com/michaelszymczak/independentfrontend
 + http://www.packer.io/
@@ -12,7 +12,7 @@ This work was inspired by:
 + https://github.com/aseigneurin/vms
 + https://github.com/ffuenf/vagrant-boxes
 
-##Goal
+## Goal
 The goal of this project is to:
 + deploy applications very fast on production (e.g. amazon aws)
 + speed up development workflow (start custom already provisioned machine)
@@ -20,7 +20,7 @@ The goal of this project is to:
 + easly and fast create and start new machines on production evironment (e.g. using ebs machine image on amazon aws)
 + not depends on vagrant boxes available publicly
 
-##How to start
+## How to start
 
 1. Tools installation
 ---
@@ -59,9 +59,9 @@ There is one **PROBLEM** I do not really know *puppet* and I do not know how to 
 8. And start working starting up your machine with `AWS_ACCESS_KEY=YOUR_ACCESS_KEY AWS_SECRET_KEY=YOUR_SECRET_KEY vagrant up --provider=aws`
 9. I have not tested using this machine with vagrant, because on Windows there are problems with connecting by SSH using private key.
 
-####All of that was created and tested on laptop with Windows 8 operating system and I don't make promise that this will work as it is on every system
+#### All of that was created and tested on laptop with Windows 8 operating system and I don't make promise that this will work as it is on every system
 
-####Pull request are very welcom :D
+#### Pull request are very welcom :D
 
 4. What's next?
 ---
